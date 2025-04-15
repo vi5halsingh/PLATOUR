@@ -75,5 +75,4 @@ function animate() {
 
 animate();
 
-
 // vishal's code start now
