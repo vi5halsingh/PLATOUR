@@ -143,17 +143,20 @@ function datain() {
 
 /*-- Gsap Add For Animation --- */
 
-gsap.registerPlugin(ScrollTrigger);
-const spans = document.querySelectorAll(".text span");
-  
-gsap.from(spans, {
-  duration: 0.4,
-  opacity: 0,
-  y: 20,
-  ease: "backout(1)", // Clean, smooth bounce
-  stagger: 0.09,
-  force3D: true
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   gsap.registerPlugin(ScrollTrigger);
+//   const spans = document.querySelectorAll(".text span");
+
+//   gsap.from(spans, {
+//     duration: 0.4,
+//     opacity: 0,
+//     y: 20,
+//     ease: "back.out(1)",
+//     stagger: 0.09,
+//     force3D: true,
+//   });
+// });
+
 
 gsap.from("#anim", {
   y: -200,

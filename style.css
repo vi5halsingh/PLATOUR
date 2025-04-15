@@ -565,22 +565,7 @@ body.nav-active { overflow: hidden; }
   100% { transform: rotate(1turn); }
 }
 
-.preload .text {
-  background-image: var(--loading-text-gradient);
-  background-size: 500%;
-  /* width: 100%; */
-  font-size: calc(2rem + 3vw);
-  font-weight: var(--weight-bold);
-  line-height: 1em;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  padding-inline-start: 16px;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0.5px var(--eerie-black-3);
-  animation: loadingText linear 3s infinite;
-}
+
 
 @keyframes loadingText {
   0% { background-position: 100%; }
@@ -1209,7 +1194,14 @@ body.nav-active { overflow: hidden; }
 .profile .img {
   margin-inline: auto;
   border-radius: var(--radius-circle);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px inset !important;
+  filter: grayscale(1);
 }
+
 
 .testi .profile-name {
   color: var(--gold-crayola);
