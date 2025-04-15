@@ -1,12 +1,12 @@
 const container = document.querySelector('.service .container');
 const scrollEndBtn = document.getElementById('scrollEndBtn');
-
+const Services = document.querySelector('.service')
 // Listen to scroll events on the container
-container.addEventListener('scroll', (e) => {
-    const isAtBottom = container.scrollTop + container.clientHeight >= container.scrollHeight - 20;
+window.addEventListener('scroll', (e) => {
+    const isAtBottom = container.scrollTop + container.clientHeight >= container.scrollHeight - 10;
 
     if (isAtBottom) {
-        container.style.boxShadow = `5px 0px 30px hsl(38, 61%, 73%) inset`;
+      // Services.style.boxShadow = `5px 0px 30px hsl(38, 61%, 73%) inset`;
         scrollEndBtn.style.display = 'block'; 
         scrollEndBtn.style.opacity = 1; 
 
@@ -14,11 +14,11 @@ container.addEventListener('scroll', (e) => {
 });
 
 
-window.addEventListener('scroll', () => {
-    scrollEndBtn.classList.remove("scrollEndBtnStyle");
-    scrollEndBtn.style.display = 'none';
-    container.style.boxShadow = 'none';
-});
+// Services.addEventListener('mouseover', () => {
+//     scrollEndBtn.classList.remove("scrollEndBtnStyle");
+//     scrollEndBtn.style.display = 'none';
+//     container.style.boxShadow = 'none';
+// });
 
 
 const dragElement = (element) => {
