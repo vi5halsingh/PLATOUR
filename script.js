@@ -605,46 +605,6 @@ gsap.from("footer > * ", {
     // markers: true // Uncomment to debug trigger points
   }
 });
-// items.forEach((item, index) => {
-//     windowtopdEventListener("scroll", () => {
-//     const scrollRotation = window.scrollY / 10;
-//     item.style.transform = `
-//       rotate(calc(360derueg / 6 * var(--i)))
-//       translateX(200px)
-//       rotateZ(${scrollRotation}deg)
-//       `;
-//       });
-
-// });
-// const container = document.querySelector(".circle-container");
-// container.addEventListener("mouseover", () => {
-//   container.style.cursor = "pointer"
-// });
-
-
-// const menuCircle = document.querySelector(".circle-container");
-// const menuContainer = document.querySelector(".menu-container");
-// const menuSection = document.querySelector(".menu-section");
-
-// // Initial circle animation
-// menuCircle.addEventListener("click", () => {
-
-//   items.forEach((item) => {
-//     item.style.transform = `
-//       rotate(calc(360deg / 6 * var(--i)))
-//       translateX(600px)
-//     `;
-//   });
-
-//   setTimeout(() => {
-//     menuCircle.style.display = "none";
-//     void menuContainer.offsetWidth;
-//     menuContainer.classList.add("show");
-//   }, ); 
-// });
-
-
-// menuContainer.style.display = "block";
 
 let orderList = [];
 

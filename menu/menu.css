@@ -159,7 +159,7 @@ html{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform .5s;
+    transition: all 1s ease-in;
   }
   .card:hover{
     transform: scale(1.03);

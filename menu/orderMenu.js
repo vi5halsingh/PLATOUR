@@ -176,3 +176,20 @@ const dragElement = (element) => {
   };
   
 
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.cards').forEach(card => {
+        card.addEventListener('mouseover', () => {
+            try {
+                card.style.transform = 'scale(1.1)';
+               
+            } catch (error) {
+                console.error('Error in card click handler:', error);
+            }
+        });
+
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)';
+        })
+    });
+});
