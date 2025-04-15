@@ -2051,7 +2051,9 @@ marquee i{
 #bottom-h1{
   top: 0% !important;
 }
-
+.zoomfixed{
+  cursor: pointer;
+}
 .content{
   position: fixed;
   margin-top: 100vh;

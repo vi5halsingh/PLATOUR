@@ -384,6 +384,7 @@ gsap.from("#top-h1", {
 })
 gsap.registerPlugin(ScrollTrigger);
 
+
 const zoomVideo = document.getElementById("zoomfixed");
 const strength = 40; // how far it pulls
 
@@ -432,14 +433,183 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
+gsap.from(".about-content", {
+  y: 100,
+  opacity: 0,
+  duration: 1.5,
+  stagger: 0.2,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".about-content",
+    start: "top 80%", // Starts when element is 80% from top of viewport
+    end: "bottom 20%",
+    toggleActions: "play none none reverse",
+    scrub: 1
+  }
+});
+gsap.from(".service-header", {
+  y: 50,  // Start position (200px from bottom)i
+  opacity: 0,
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".service-header",
+    start: "top 80%", // Starts animation when element is 80% from top of viewport
+    toggleActions: "play none none reverse"
+  }
+});
+gsap.from(".services-card", {
+  y: 100,  // Start from 100px below (will move up to original position)
+  opacity: 0,
+  duration: 1.5,
+  ease: "power2.out",
+  stagger: {
+    amount: 0.6,  // Total amount of stagger between all cards
+    from: "start"
+  },
+  scrollTrigger: {
+    trigger: ".services-card",
+    start: "top bottom-=50", // Starts when element is 100px from bottom of viewport
+    toggleActions: "play none none reverse",
+    scrub: true
+  }
+});
 
-const items = document.querySelectorAll(".item");
+gsap.from(".special-dish-banner", {
+  y: 50,
+  opacity: 0,
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".special-dish-banner",
+    start: "top 80%",
+    end: "top 20%",
+    scrub: 1,
+    toggleActions: "play none none reverse",
+    onEnter: () => {
+      gsap.to(".special-dish-banner img", {
+        scale: 1.2,
+        duration: 1,
+        ease: "power2.out"
+      });
+    },
+    onLeave: () => {
+      gsap.to(".special-dish-banner img", {
+        scale: 1,
+        duration: 1,
+        ease: "power2.in"
+      });
+    }
+  }
+});
+gsap.from(".special-dish-content > *", {
+  y: 100, // Start 100px below
+  opacity: 0,
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".special-dish-content",
+    start: "top 80%", // Start animation when element is 80% from top of viewport
+    end: "top 5%",
+    scrub: 1,
+    toggleActions: "play none none reverse"
+  }
+});
 
+gsap.from('.form-left > *', {
+  y: 50, // Start 50px below
+  opacity: 0,
+  duration: .7,
+  stagger: 0.2, // Delay between each element
+  scrollTrigger: {
+    trigger: '.form-left',
+    start: 'top 40%', // Start when element is 80% from top of viewport
+    end: 'bottom 20%',
+    toggleActions: 'play none none reverse',
+    scrub: 1,
+    // markers: true // Set to true for debugging
+  }
+});
+
+gsap.from('.reservation', {
+  y: 50,
+  opacity: 0, 
+  duration: 1,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: '.new-form',
+    start: 'top 40%', // Start when element is 80% from top of viewport
+    end: 'bottom 20%', // Ends animation when element is 20% from top
+    toggleActions: 'play none none reverse',
+    scrub: true, // Smoothly animates with scroll
+    // markers: true // Uncomment to debug trigger points
+  }
+})
+gsap.from('.feature-item', {
+  y: 300, // Start 100px below
+  opacity: 0,
+  duration: 1,
+  stagger: {
+    amount: 0.8, // Total time between first and last animation
+    from: "start"
+  },
+  scrollTrigger: {
+    trigger: '.feature-item',
+    start: 'top 90%', // Starts when element is 80% from top of viewport
+    end: '70% 30%',
+    toggleActions: 'play none none reverse',
+    scrub: true, // Smooth animation tied to scroll position
+    // markers: true // Uncomment to debug trigger points
+  }
+});
+
+// Magnetic effect for cards
+const cards = document.querySelectorAll('.evnt');
+const magnetStrength = 2; // Adjust strength of magnetic pull
+
+cards.forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    const distanceX = e.clientX - centerX;
+    const distanceY = e.clientY - centerY;
+
+    gsap.to(card, {
+      x: distanceX * 0.2,
+      y: distanceY * 0.2,
+      duration: 0.6,
+      ease: "power3.out"
+    });
+  });
+
+  card.addEventListener('mouseleave', () => {
+    gsap.to(card, {
+      x: 0,
+      y: 0,
+      duration: 0.6,
+      ease: "elastic.out(1, 0.3)"
+    });
+  });
+});
+
+gsap.from("footer > * ", {
+  y: 100, // Start 100px below
+  opacity: 0,
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: "footer",
+    start: "top 30%", // Starts when footer is 90% from top of viewport
+    end: "top 0%",
+    scrub: true, // Smooth animation tied to scroll
+    toggleActions: "play none none reverse",
+    // markers: true // Uncomment to debug trigger points
+  }
+});
 // items.forEach((item, index) => {
-//     window.addEventListener("scroll", () => {
+//     windowtopdEventListener("scroll", () => {
 //     const scrollRotation = window.scrollY / 10;
 //     item.style.transform = `
-//       rotate(calc(360deg / 6 * var(--i)))
+//       rotate(calc(360derueg / 6 * var(--i)))
 //       translateX(200px)
 //       rotateZ(${scrollRotation}deg)
 //       `;
