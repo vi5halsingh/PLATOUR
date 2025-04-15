@@ -8,7 +8,7 @@
 
   <!--  primary meta tags -->
 
-  <title>PLATOUR</title>
+  <title>PLATOUR - RESTAURANT</title>
   <meta name="title" content="Café Aroma - Coffee & Pastries">
   <meta name="description"
     content="Welcome to Café Aroma - Your cozy spot for premium coffee, fresh pastries and light meals">
@@ -23,12 +23,13 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- locomotive-scroll link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
+ 
   <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -584,15 +585,15 @@
            
           <p class="section-subtitle text-center label-2">Special Selection</p>
 
-          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+          <h2 data-aos="fade-flip" class="headline-1 section-title text-center">Delicious Menu</h2>
           <img src="shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim">
           <img src="shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim">
         
           <div class="menu-container">
-            <!-- <ul class="grid-list"> -->
+            <ul class="grid-list">
               <li class="menu-item-list">
                 
-                <div class="menu-card hover:card">
+                <div data-aos="fade-right" class="menu-card hover:card" id="slide">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                     <img src="menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad" class="img-cover">
@@ -619,7 +620,7 @@
               </li>
 
               <li class="menu-item-list">
-                <div class="menu-card hover:card">
+                <div data-aos="fade-left" class="menu-card hover:card">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                     <img src="menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne" class="img-cover">
@@ -645,7 +646,7 @@
               </li>
 
               <li class="menu-item-list">
-                <div class="menu-card hover:card">
+                <div data-aos="fade-right" class="menu-card hover:card">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                     <img src="menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
@@ -672,7 +673,7 @@
               </li>
 
               <li class="menu-item-list">
-                <div class="menu-card hover:card">
+                <div data-aos="fade-left" class="menu-card hover:card">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                     <img src="menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu" class="img-cover">
@@ -700,7 +701,7 @@
               </li>
 
               <li class="menu-item-list">
-                <div class="menu-card hover:card">
+                <div data-aos="fade-right" class="menu-card hover:card">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                     <img src="menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
@@ -727,7 +728,7 @@
               </li>
 
               <li class="menu-item-list">
-                <div class="menu-card hover:card">
+                <div data-aos="fade-left" class="menu-card hover:card">
 
                   <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                     <img src="menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish" class="img-cover">
@@ -754,12 +755,12 @@
 
             </ul>
 
-            <p class="menu-text text-center">
+            <p data-aos="fade-up" class="menu-text text-center">
               During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
             </p>
 
-            <a href="./menu/menu.html" class="btn btn-primary">
-              <span class="text text-1">View All Menu</span>
+            <a data-aos="fade-up" href="./menu/menu.html" class="btn btn-primary">
+              <span  class="text text-1">View All Menu</span>
 
               <span class="text text-2" aria-hidden="true">View All Menu</span>
             </a>
@@ -1244,8 +1245,19 @@
   <script src="script.js"></script>
   <script src="script1.js"></script>
   <script src="dom.js"></script>
+   
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:260,
+      duration:500,
+      easing:"ease-in-out",
+    });
+  </script>
 
 </body>
 
