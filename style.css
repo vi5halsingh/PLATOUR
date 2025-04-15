@@ -356,6 +356,10 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-2);
   z-index: -1;
 }
+.btn-secondary{
+  border-radius: 0px 
+  !important;
+}
 
 .btn .text { transition: var(--transition-1); }
 
@@ -1851,7 +1855,7 @@ textarea.input-field {
   /* SERVICE */
 
   .service .grid-list { gap: 150px; }
-  .service .grid-list li:nth-child(2n+1) { transform: translateY(-160px); }
+  .service .grid-list li:nth-child(2n+1) { transform: translateY(-30px); }
   .service .section-text { margin-block-end: 75px; }
 
 
@@ -2065,21 +2069,7 @@ marquee i{
   color:hsl(38, 61%, 73%);
   gap: 4vh;
 }
-/* asjkfkjda
-afkjdskjlads
-adsfkj;lkjl
-asdkjlkjl]asdfdkj
-kjasdkjlkjl
-sadfkljkjlk
-asdfdkjlkjl;dfs
-;kjlkjadfs
-jk;ljkadfs
-kj;lkjladfs
-;kjlkjldfsakjl
-akjkjd
 
-
-f */
 .content h4{
   font-size: 2vw;
   font-family: Founder;
