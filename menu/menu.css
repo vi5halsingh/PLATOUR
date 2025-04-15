@@ -200,8 +200,11 @@ html{
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.5s ease;
   }
-  .cards:hover {
+  .cards:active {
+    transform: scale(0.9);
+    transition: transform 0.2s;
   }
   .itemsec{ padding: 30px 20px; }
   .cards img{
