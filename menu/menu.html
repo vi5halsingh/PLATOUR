@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLATOUR - Restaurant</title>
+
+    <link rel="icon" type="imagr/icon"
+        href="https://us.123rf.com/450wm/seamartini/seamartini2203/seamartini220300123/183416613-indian-cuisine-spice-icon-asian-food-seasonings-and-hot-spices-indian-food-restaurant-vector-symbol.jpg?ver=6">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../orderPage.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="example-box">
+            <div class="background-shapes"></div>
+            <h1>Yummylicious</h1>
+            <p>Serving unforgettable flavors with every bite—only the most delicious food, always.</p>
+        </div>
+
+        <nav class="category-nav">
+            <button id="go-back" onclick="goBack()">Go Back</button>
+            <a class="nlink" href="#veg">🥦 Veg</a>
+            <a class="nlink" href="#nonveg">🍗 Non-Veg</a>
+            <a class="nlink" href="#sweets">🍰 Sweets</a>
+            <a class="nlink" href="#drinks">🥤 Drinks</a>
+            <a class="nlink" href="#breakfast">🍳 Breakfast</a>
+            <a class="nlink" href="#lunch">🍽️ Lunch</a>
+            <a class="nlink" href="#dinner">🌙 Dinner</a>
+        </nav>
+
+        <main class="menu-container">
+
+            <section class="menu-category">
+                <h2 class="sheryanim">Our Special Dishes</h2>
+                <div class='grid'>
+                    <div class='card tall'
+                        style="background-image:url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDc5fHx8ZW58MHx8fHx8')">
+                    </div>
+                    <div class='card'
+                        style="background-image:url('https://media.istockphoto.com/id/1263763610/photo/indian-mix-veg-or-mixed-vegetable-recipe-served-in-a-bowl-with-chapati.webp?a=1&b=1&s=612x612&w=0&k=20&c=DcOPMHp3FXMhTVy1kn2kRf5go31IXkKCmkfo1GqYVQU=')">
+                    </div>
+                    <div class='card wide'
+                        style="background-image:url('https://plus.unsplash.com/premium_photo-1679231521293-e13146411fb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMHZlZ3xlbnwwfHwwfHx8MA%3D%3D')">
+                    </div>
+                    <div class='card'
+                        style="background-image:url('https://media.istockphoto.com/id/1497707535/photo/veg-manchurian-in-a-bowl-closeup-image.webp?a=1&b=1&s=612x612&w=0&k=20&c=3vnKsHt7T6E6T3IIRUwOy4wZ17h4DyqIrO3rPQP5Efg=')">
+                    </div>
+                    <div class='card tall'
+                        style="background-image:url('https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDkxfHx8ZW58MHx8fHx8')">
+                    </div>
+                    <div class='card'
+                        style="background-image:url('https://images.unsplash.com/photo-1625242661157-e9e5708ffe5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2QlMjB2ZWd8ZW58MHx8MHx8fDA%3D')">
+                    </div>
+                    <div class='card wide'
+                        style="background-image:url('https://plus.unsplash.com/premium_photo-1705609329014-23ce14b86b95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExM3x8fGVufDB8fHx8fA%3D%3D')">
+                    </div>
+                    <div class='card'
+                        style="background-image:url('https://media.istockphoto.com/id/1292617624/photo/healthy-and-tasty-thai-veg-fried-rice-made-of-mixed-veggies-served-in-bowl-over-a-rustic.webp?a=1&b=1&s=612x612&w=0&k=20&c=gwfK0FFBWe1SE7PJi5WpSCH5E3XOn8prevobg3khCrw=')">
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <div class="itemsec">
+
+            <h2 id="veg" class="head">🥦 Vegetarian food</h2>
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Vegetable Curry">
+                <div class="item-info">
+                    <h3>Vegetable Curry</h3>
+                    <p>₹ 120</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1511763338-f1d479ce8292?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+                    alt="Palak Paneer">
+                <div class="item-info">
+                    <h3>Palak Paneer</h3>
+                    <p>₹ 150</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMzfHx8ZW58MHx8fHx8"
+                    alt="Aloo Gobi">
+                <div class="item-info">
+                    <h3>Aloo Gobi</h3>
+                    <p>₹ 110</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM4fHx8ZW58MHx8fHx8"
+                    alt="Dal Makhani">
+                <div class="item-info">
+                    <h3>Dal Makhani</h3>
+                    <p>₹ 140</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1506395308321-904a71783d60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ4fHx8ZW58MHx8fHx8"
+                    alt="Paneer Butter Masala">
+                <div class="item-info">
+                    <h3>Paneer Butter Masala</h3>
+                    <p>₹ 160</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1519996409144-56c88c9aa612?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDcwfHx8ZW58MHx8fHx8"
+                    alt="Vegetable Biryani">
+                <div class="item-info">
+                    <h3>Vegetable Biryani</h3>
+                    <p>₹ 180</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1604917869287-3ae73c77e227?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHZlZyUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+                    alt="Malai Kofta">
+                <div class="item-info">
+                    <h3>Malai Kofta</h3>
+                    <p>₹ 170</p>
+                </div>
+            </div>
+
+            <h2 id="nonveg" class="head">🍗 Non Vegetarian food</h2>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1620894580123-466ad3a0ca06?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
+                    alt="Butter Chicken">
+                <div class="item-info">
+                    <h3>Butter Chicken</h3>
+                    <p>₹ 220</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://plus.unsplash.com/premium_photo-1675864532835-6e47099cca6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+                    alt="Chicken Biryani">
+                <div class="item-info">
+                    <h3>Chicken Biryani</h3>
+                    <p>₹ 200</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://plus.unsplash.com/premium_photo-1695456065067-45cabcf25e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8"
+                    alt="Mutton Curry">
+                <div class="item-info">
+                    <h3>Mutton Curry</h3>
+                    <p>₹ 250</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1618449840665-9ed506d73a34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8"
+                    alt="Fish Curry">
+                <div class="item-info">
+                    <h3>Fish Curry</h3>
+                    <p>₹ 190</p>
+                </div>
+            </div>
+
+            <h2 id="sweets" class="head">🍰 Sweets</h2>
+            <div class="cards "><img
+                    src="https://plus.unsplash.com/premium_photo-1673808893646-e24ac06654a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8"
+                    alt="Gulab Jamun">
+                <div class="item-info">
+                    <h3>Gulab Jamun (2pcs)</h3>
+                    <p>₹ 60</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1631143070457-c1aecc92abbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ0fHx8ZW58MHx8fHx8"
+                    alt="Rasgulla (2pcs)">
+                <div class="item-info">
+                    <h3>Rasgulla (2pcs)</h3>
+                    <p>₹ 50</p>
+                </div>
+            </div>
+            <div class="cards "><img
+                    src="https://images.unsplash.com/photo-1593424718424-cf4d83f3def1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQ3fHx8ZW58MHx8fHx8"
+                    alt="Jalebi">
+                    <div class="item-info">
+                        <h3>Jalebi (100g)</h3>
+                        <p>₹ 70</p>
+                    </div>
+                </div>
+    
+                <h2 id="drinks" class="head">🥤 Drinks</h2>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRyaW5rfGVufDB8fDB8fHww"
+                        alt="Lassi">
+                    <div class="item-info">
+                        <h3>Sweet Lassi</h3>
+                        <p>₹ 40</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1694870198470-61a7c534d64f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA1fHxkcmlua3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Masala Chai">
+                    <div class="item-info">
+                        <h3>Masala Chai</h3>
+                        <p>₹ 20</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1506802913710-40e2e66339c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGRyaW5rfGVufDB8fDB8fHww"
+                        alt="Fresh Lime Soda">
+                    <div class="item-info">
+                        <h3>Fresh Lime Soda</h3>
+                        <p>₹ 35</p>
+                    </div>
+                </div>
+    
+                <h2 id="breakfast" class="head">🍳 Breakfast</h2>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJlYWtmYXN0fGVufDB8fDB8fHww"
+                        alt="Aloo Paratha (2pcs)">
+                    <div class="item-info">
+                        <h3>Aloo Paratha (2pcs)</h3>
+                        <p>₹ 80</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1513442542250-854d436a73f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Idli Sambhar (2pcs)">
+                    <div class="item-info">
+                        <h3>Idli Sambhar (2pcs)</h3>
+                        <p>₹ 70</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1515573866280-06bda6d4e16f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+                        alt="Poha">
+                    <div class="item-info">
+                        <h3>Poha</h3>
+                        <p>₹ 60</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1672639601612-4fcf7dab1ae6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D"
+                        alt="Upma">
+                    <div class="item-info">
+                        <h3>Upma</h3>
+                        <p>₹ 65</p>
+                    </div>
+                </div>
+    
+                <h2 id="lunch" class="head">🍽️ Lunch</h2>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1505576633757-0ac1084af824?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bHVuY2h8ZW58MHx8MHx8fDA%3D"
+                        alt="Thali (Veg)">
+                    <div class="item-info">
+                        <h3>Thali (Veg)</h3>
+                        <p>₹ 180</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1609595781576-1580ff3ee291?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI3fHx8ZW58MHx8fHx8"
+                        alt="Rajma Chawal">
+                    <div class="item-info">
+                        <h3>Rajma Chawal</h3>
+                        <p>₹ 130</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1568625365131-079e026a927d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMzfHx8ZW58MHx8fHx8"
+                        alt="Chole Bhature">
+                    <div class="item-info">
+                        <h3>Chole Bhature (2pcs)</h3>
+                        <p>₹ 150</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1631311695255-8dde6bf96cb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8"
+                        alt="Dal Rice">
+                    <div class="item-info">
+                        <h3>Dal Rice</h3>
+                        <p>₹ 120</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8"
+                        alt="Roti Sabzi">
+                    <div class="item-info">
+                        <h3>Roti Sabzi (4 Roti)</h3>
+                        <p>₹ 100</p>
+                    </div>
+                </div>
+    
+    
+                <h2 id="dinner" class="head">🌙 Dinner</h2>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1669557208969-737d6ab1c9fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlubmVyJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Thali (Non-Veg)">
+                    <div class="item-info">
+                        <h3>Thali (Non-Veg)</h3>
+                        <p>₹ 250</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8"
+                        alt="Chicken Curry with Rice">
+                    <div class="item-info">
+                        <h3>Chicken Curry with Rice</h3>
+                        <p>₹ 210</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1669557211332-9328425b6f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+                        alt="Mutton Biryani">
+                    <div class="item-info">
+                        <h3>Mutton Biryani</h3>
+                        <p>₹ 230</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1695456065067-45cabcf25e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8"
+                        alt="Fish Fry with Salad">
+                    <div class="item-info">
+                        <h3>Fish Fry with Salad</h3>
+                        <p>₹ 200</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1675864532835-6e47099cca6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dG90by1yZWxhdGVkfDMyfHx8ZW58MHx8fHx8"
+                        alt="Egg Curry with Roti">
+                    <div class="item-info">
+                        <h3>Egg Curry with Roti (2pcs)</h3>
+                        <p>₹ 160</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://plus.unsplash.com/premium_photo-1694860348177-4ef64cf04422?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8"
+                        alt="Prawn Masala">
+                    <div class="item-info">
+                        <h3>Prawn Masala</h3>
+                        <p>₹ 280</p>
+                    </div>
+                </div>
+                <div class="cards "><img
+                        src="https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHZlZyUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+                        alt="Saag Paneer">
+                    <div class="item-info">
+                        <h3>Saag Paneer</h3>
+                        <p>₹ 155</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="order-menu"></div>
+        <div id="custom-popup" class="custom-popup hidden">
+          <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <p id="popup-message">This is a popup</p>
+          </div>
+        </div>
+        
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+        <script src="menu.js"></script>
+        <script src="orderMenu.js"></script>
+    </body>
+    
+    </html>
