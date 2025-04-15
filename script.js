@@ -1,4 +1,5 @@
 'use strict';
+
 /* PRELOAD loading will be end after document is loaded */
 
 const preloader = document.querySelector("[data-preaload]");
@@ -142,6 +143,18 @@ function datain() {
 
 /*-- Gsap Add For Animation --- */
 
+gsap.registerPlugin(ScrollTrigger);
+const spans = document.querySelectorAll(".text span");
+  
+gsap.from(spans, {
+  duration: 0.4,
+  opacity: 0,
+  y: 20,
+  ease: "backout(1)", // Clean, smooth bounce
+  stagger: 0.09,
+  force3D: true
+});
+
 gsap.from("#anim", {
   y: -200,
   opacity: 0.2,
@@ -171,14 +184,16 @@ gsap.from(".section menu .grid-list", {
 // onscroll text animation
 gsap.to(".c1 h1", {
   duration: 3,
-  animation: Expo.easeIn,
+  ease: "power2.inOut", // Smoother easing function
   transform: "translateX(-65%)",
   scrollTrigger: {
     trigger: ".c1",
     start: "top 0%",
     end: "top -250%",
-    scrub: true,
-    pin: true
+    scrub: 1, // Increased scrub value for smoother scrolling
+    stagger: 0.5,
+    pin: true,
+    anticipatePin: 1 // Smoother pin behavior
   }
 });
 
@@ -364,6 +379,56 @@ gsap.from("#top-h1", {
   delay: 1,
   opacity: 0
 })
+gsap.registerPlugin(ScrollTrigger);
+
+const zoomVideo = document.getElementById("zoomfixed");
+const strength = 40; // how far it pulls
+
+// Get mouse position
+document.addEventListener("mousemove", (e) => {
+  const rect = zoomVideo.getBoundingClientRect();
+  const relX = e.clientX - rect.left;
+  const relY = e.clientY - rect.top;
+
+  const centerX = rect.width / 1;
+  const centerY = rect.height / 1;
+
+  const deltaX = (relX - centerX) / centerX;
+  const deltaY = (relY - centerY) / centerY;
+
+  // Animate with GSAP
+  gsap.to(zoomVideo, {
+    x: deltaX * strength,
+    y: deltaY * strength,
+    duration: 0.4,
+    ease: "power3.out"
+  });
+});
+
+// Reset on leave
+zoomVideo.addEventListener("mouseleave", () => {
+  gsap.to(zoomVideo, {
+    x: 0,
+    y: 0,
+    duration: 0.5,
+    ease: "elastic.out(1, 0.5)"
+  });
+});
+// Initialize Lenis smooth scrolling
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  orientation: 'vertical',
+  smoothWheel: true
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 
 const items = document.querySelectorAll(".item");
 
@@ -522,7 +587,6 @@ document.querySelectorAll(".menu-section li").forEach((item,i) => {
     
   });
 });
-
 
 
 

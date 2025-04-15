@@ -2,8 +2,43 @@
 .service {
   position: relative;
   overflow: hidden;
-  padding: 80px 5rem;
+  padding: 50px 0rem;
   background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
+}
+#scrollEndBtn {
+  display: none;
+  opacity: 0;
+  /* background-color: rgb(68, 67, 67);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
+  /* background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(50px); */
+  /* position :absolute; */
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 12rem;
+  z-index: 100;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: FadeIn 0.2s ease-out forwards;
+  margin-top: 2rem;
+}
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+  
+}
+#scrollEndBtn a{
+  text-decoration: none;
+  color: hsl(38, 61%, 73%);
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 .service .container {
@@ -14,17 +49,16 @@
   max-width: 90%;
   margin: auto;
   border-radius: var(--radius-md);
-  overflow-y: scroll;
-  height: 100vh;
-  /* padding: 2rem 0; */
+  /* height: 90vh; */
+  padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  overflow: hidden;
   /* border: 2px solid rebeccapurple; */
-  box-shadow: 0 0 30px #000;
-  backdrop-filter: blur(8px);
+ 
 }
 ::-webkit-scrollbar { width: 5px; }
 
@@ -41,7 +75,7 @@
   width: 100%;
   position: sticky;
   top:0px;
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   margin:2rem auto ;
   /* border: 2px solid rebeccapurple; */
   border-bottom-left-radius:10%;
@@ -69,16 +103,39 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   /* margin-top: 50px; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .service-card {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* height: 90%; */
 }
+@media screen and (max-width: 575px)  {
+.service .container{
+  max-width: 90%;
+  /* height: 100vh; */
+  padding-bottom: 5rem;
+}
+.service {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 0rem;
+  background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
+}
+.service .grid-list {
+  display: grid
+;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 5px !important;
+  /* padding-top: 50px; */
+}
+}
+
 
 .service-card:hover {
   transform: translateY(-10px);
@@ -99,7 +156,7 @@
 }
 
 .service-card .card-content {
-  padding: 25px;
+  padding: 2px;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(10px);
 }
@@ -166,35 +223,3 @@
   
 }
 
-#scrollEndBtn {
-  /* display: none; */
-  opacity: 0;
-  background-color: transparent;
-  backdrop-filter: blur(20px);
-  position :absolute;
-  bottom: 8%;
-  left: 7.5%;
-  width: 85%;
-  height: 15rem;
-  z-index: 100;
-  border-radius: 5px;
-  cursor: pointer;
-  animation: FadeIn 0.2s ease-out forwards;
-}
-@keyframes FadeIn {
-  from {
-    opacity: 0;
-    scale: 0;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-  
-}
-#scrollEndBtn a{
-  text-decoration: none;
-  color: hsl(38, 61%, 73%);
-  font-size: 3.5rem;
-  font-weight: 700;
-}

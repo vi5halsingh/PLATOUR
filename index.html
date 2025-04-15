@@ -45,6 +45,8 @@
   <link rel="preload" as="image" href="hero-slider-1.jpg">
   <link rel="preload" as="image" href="hero-slider-2.jpg">
   <link rel="preload" as="image" href="hero-slider-3.jpg">
+  <link rel="stylesheet" href="loader.css">
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
 
 </head>
 
@@ -53,11 +55,31 @@
 
   <!-- #PRELOADER -->
 
-  <div class="preload" data-preaload>
-    <div class="circle"></div>
-    <p class="text">Have A </p>
-    <p class="text">Delicious Plate Tour </p>
-  </div>
+  <!-- <div class="preload" data-preaload>
+    <div class="loader">
+      <div class="container">
+        <div class="outer-box">
+          <div class="circle">
+            <img src="./menu/img.png" alt="Loading..." />
+          </div>
+        </div>
+        <div class="text">
+    <span>H</span><span>a</span><span>v</span><span>e</span>
+    <span> </span>
+    <span>A</span>
+    <span> </span>
+    <span>D</span><span>e</span><span>l</span><span>i</span><span>c</span><span>i</span><span>o</span><span>u</span><span>s</span>
+    <span> </span>
+    <span>P</span><span>l</span><span>a</span><span>t</span><span>e</span>
+    <span> </span>
+    <span>T</span><span>o</span><span>u</span><span>r</span>
+            
+        </div>
+      </div>
+     
+      
+    </div>
+  </div> -->
 
   <!-- #TOP BAR -->
 
@@ -195,7 +217,7 @@
 
         </nav>
 
-        <a href="#" class="btn btn-secondary">
+        <a href="#contact" class="btn btn-secondary">
           <span class="text text-1 rounded-md">Find A Table</span>
 
           <span class="text text-2" aria-hidden="true">Find A Table</span>
@@ -321,23 +343,65 @@
         <link rel="stylesheet" href="service-animations.css">
         
         <section class="section service bg-black-10 text-center" aria-label="service">
-         
-          <div class="container">
-            <div class="service-header">
+          <div class="service-header">
 
-              <p class="section-subtitle label-2">Flavors For Royalty</p>
-              
-              <h2 class="headline-1 section-title">We Offer Top Notch</h2>
-              
-            </div>
-  
+            <p class="section-subtitle label-2">Flavors For Royalty</p>
+            
+            <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+            
+          </div>
+          <div class="container">
             <ul class="grid-list">
   
               <li class="services-card">
                 <div class="service-card">
   
                   <a href="#" class="has-before hover:shine">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <figure class="card-banner img-holder" style="--width: 285; ">
+                      <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg"
+                        width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                    </figure>
+                  </a>
+  
+                  <div class="card-content">
+  
+                    <h3 class="title-4 card-title">
+                      <a href="#">Breakfast</a>
+                    </h3>
+  
+                    <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
+  
+                  </div>
+  
+                </div>
+              </li>
+              <li class="services-card">
+                <div class="service-card">
+  
+                  <a href="#" class="has-before hover:shine">
+                    <figure class="card-banner img-holder" style="--width: 285; ">
+                      <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg"
+                        width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                    </figure>
+                  </a>
+  
+                  <div class="card-content">
+  
+                    <h3 class="title-4 card-title">
+                      <a href="#">Breakfast</a>
+                    </h3>
+  
+                    <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
+  
+                  </div>
+  
+                </div>
+              </li>
+              <li class="services-card">
+                <div class="service-card">
+  
+                  <a href="#" class="has-before hover:shine">
+                    <figure class="card-banner img-holder" style="--width: 285; ">
                       <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg"
                         width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
                     </figure>
@@ -356,14 +420,14 @@
                 </div>
               </li>
   
-              <li class="services-card">
+              <!-- <li class="services-card">
                 <div class="service-card">
   
                   <a href="#" class="has-before hover:shine">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <figure class="card-banner img-holder" style="--width: 285; ">
                       <img
                         src="https://static.vecteezy.com/system/resources/previews/029/622/110/non_2x/juicy-and-grilled-chicken-kebab-skewers-free-photo.jpg"
-                        width="285" height="336" loading="lazy" alt="Appetizers" class="img-cover">
+                        width="285" height="236" loading="lazy" alt="Appetizers" class="img-cover">
                     </figure>
                   </a>
   
@@ -381,106 +445,36 @@
               </li>
               <li class="services-card">
                 <div class="service-card">
-  
+            
                   <a href="#" class="has-before hover:shine">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                      <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg"
-                        width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                    <figure class="card-banner img-holder" style="--width: 285;">
+                      <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FsYWR8ZW58MHx8MHx8fDA%3D"
+                        width="285" height="336" loading="lazy" alt="Salads" class="img-cover">
                     </figure>
                   </a>
-  
+            
                   <div class="card-content">
-  
                     <h3 class="title-4 card-title">
-                      <a href="#">Breakfast</a>
+                      <a href="#">Salads</a>
                     </h3>
-  
                     <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
-  
                   </div>
-  
+            
                 </div>
-              </li>
-              
-  
-              <li class="services-card">
-                <div class="service-card">
-  
-                  <a href="#" class="has-before hover:shine">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                      <img
-                        src="https://images.unsplash.com/photo-1437418747212-8d9709afab22?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRyaW5rfGVufDB8fDB8fHww"
-                        width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
-                    </figure>
-                  </a>
-  
-                  <div class="card-content">
-  
-                    <h3 class="title-4 card-title">
-                      <a href="#">Drinks</a>
-                    </h3>
-  
-                    <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
-  
-                  </div>
-  
-                </div>
-              </li>
-              <li class="services-card">
-                <div class="service-card">
-  
-                  <a href="#" class="has-before hover:shine">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                      <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg"
-                        width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
-                    </figure>
-                  </a>
-  
-                  <div class="card-content">
-  
-                    <h3 class="title-4 card-title">
-                      <a href="#">Breakfast</a>
-                    </h3>
-  
-                    <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
-  
-                  </div>
-  
-                </div>
-              </li>
-              <li class="services-card">
-                <div class="service-card">
-  
-                  <a href="#" class="has-before hover:shine">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                      <img
-                        src="https://images.unsplash.com/photo-1437418747212-8d9709afab22?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRyaW5rfGVufDB8fDB8fHww"
-                        width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
-                    </figure>
-                  </a>
-  
-                  <div class="card-content">
-  
-                    <h3 class="title-4 card-title">
-                      <a href="#">Drinks</a>
-                    </h3>
-  
-                    <a href="#menu" class="btn-text hover-underline label-2">View Menu</a>
-  
-                  </div>
-  
-                </div>
-               
-              </li>
-
+              </li> -->
+            
+             
             </ul>
-           
+            
+             
+            
+            <button id="scrollEndBtn">
+              <a href="./menu/menu.html">View All >></a>  
+            </button>
+          </div>
           <img src="shape-1.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
           <img src="shape-2.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
-        </div>
-        <button id="scrollEndBtn">
-          <a href="./menu/menu.html">View All >></a>  
-        </button>
+        
       </section>
 
         <!-- #ABOUT -->
@@ -517,7 +511,7 @@
 
 
 
-              <video max-width="520" height="520" autoplay muted loop id="zoomfixed">
+              <video max-width="520" height="520" autoplay muted loop id="zoomfixed" >
                 <source src=" https://cdn.pixabay.com/video/2023/04/17/159429-818832307_large.mp4" type="video/mp4"
                   width="550" height="550" loading="lazy" alt="about banner" class="w-100" data-parallax-item
                   data-parallax-speed="1">
@@ -595,7 +589,7 @@
           <img src="shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim">
         
           <div class="menu-container">
-            <ul class="grid-list">
+            <!-- <ul class="grid-list"> -->
               <li class="menu-item-list">
                 
                 <div data-aos="fade-right" class="menu-card hover:card" id="slide">
@@ -1107,7 +1101,7 @@
           <div class="footer-brand has-before has-after">
 
             <a href="#" class="logo">
-              <img src="logo.gold.png" width="160" height="50" loading="lazy" alt="indian home">
+              <img src="logo2 (1).png " width="160" height="50" loading="lazy" alt="indian home">
             </a>
 
             <address class="body-4">
