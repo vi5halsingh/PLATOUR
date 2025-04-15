@@ -599,7 +599,7 @@ gsap.from("footer > * ", {
     end: "top 0%",
     scrub: true, // Smooth animation tied to scroll
     toggleActions: "play none none reverse",
-    markers: true // Uncomment to debug trigger points
+    // markers: true // Uncomment to debug trigger points
   }
 });
 // items.forEach((item, index) => {
