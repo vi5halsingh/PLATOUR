@@ -567,7 +567,7 @@ body.nav-active { overflow: hidden; }
   font-weight: var(--weight-bold);
   line-height: 1em;
   text-transform: uppercase;
-  letter-spacing: 16px;
+  letter-spacing: 5px;
   padding-inline-start: 16px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1994,7 +1994,7 @@ textarea.input-field {
 }
 #center p{
   font-size: 2rem;
-  padding: 15px 50px;
+  padding:50px;
   font-family: "Sofia Sans", sans-serif;
   letter-spacing: 2.5px;
    word-spacing: 2px;

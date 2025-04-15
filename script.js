@@ -254,6 +254,37 @@ gsap.from("#section-event .card-title", {
   scrub: true,
 })
 
+
+// gsap.from("#menu #slide", {
+//   y: -100,
+//   opacity: 5,
+//   duration: 5,
+//   scrollTrigger: "#menu #slide",
+//   scrub: true,
+   
+// })
+
+gsap.from("#menu menu-item-list", {
+  y: 50,
+  stagger: .5,
+  duration: 15,
+  scrollTrigger: {
+    trigger: "#menu menu-item-list",
+    scroller: "body",
+    scrub: true,
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
 /*-- SheryJs Add For advanced text Animation --- */
 
 Shery.textAnimate(".container .headline-1", {
