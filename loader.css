@@ -34,7 +34,7 @@
 .loader  .circle img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   object-fit: cover;
   z-index: 1;
 }
@@ -58,13 +58,13 @@
 }
 
 .loader  .text {
-  font-size: 1.25rem;
+  font-size: 3rem;
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .loader  .text span {
-    color: white !important;
-    z-index: 555565656;
+  color: hsl(38, 61%, 73%)!important;
+  z-index: 555565656;
   display: inline-block;
   animation: bounce .5s infinite ease-in-out;
 }
